@@ -11,7 +11,7 @@ export const APP_CONFIG = {
       twitter: '@Fateh_AK_',
     },
   },
-  PROD_BASE_URL: 'https://navigo.pages.dev',
+  PROD_BASE_URL: 'https://navigo-app.pages.dev',
 };
 
 export const META_TAGS = [

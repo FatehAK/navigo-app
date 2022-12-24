@@ -87,7 +87,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectName: navigo
+          projectName: navigo-app
           directory: dist
           branch: develop
 

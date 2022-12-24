@@ -1,11 +1,11 @@
 {
-  "name": "navigo",
+  "name": "navigo-app",
   "version": "1.0.0",
   "author": "fatehak",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/FatehAK/navigo"
+    "url": "https://github.com/FatehAK/navigo-app"
   },
   "scripts": {
     "start": "vite",
@@ -30,6 +30,11 @@
     "defaults and supports es6-module",
     "maintained node versions"
   ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanitize.css": "^13.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@html-eslint/eslint-plugin": "^0.15.0",
@@ -85,10 +90,5 @@
     "pnpm": ">=7.19.0",
     "node": ">=18"
   },
-  "packageManager": "pnpm@7.19.0",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sanitize.css": "^13.0.0"
-  }
+  "packageManager": "pnpm@7.19.0"
 }
