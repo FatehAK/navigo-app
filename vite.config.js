@@ -21,6 +21,8 @@ export default defineConfig(({ mode }) => {
         pages: resolve(__dirname, 'src/pages'),
         components: resolve(__dirname, 'src/components'),
         assets: resolve(__dirname, 'src/assets'),
+        'src/constants': resolve(__dirname, 'src/constants'),
+        'src/context': resolve(__dirname, 'src/context'),
         appConfig: resolve(__dirname, './appConfig'),
       },
     },

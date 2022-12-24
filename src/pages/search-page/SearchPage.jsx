@@ -1,3 +1,3 @@
-const SearchPage = () => <div className="search-page">Landing Page</div>;
+const SearchPage = () => <div className="search-page">Search Page</div>;
 
 export default SearchPage;
