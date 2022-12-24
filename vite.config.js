@@ -9,7 +9,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import strip from '@rollup/plugin-strip';
 import { visualizer } from 'rollup-plugin-visualizer';
 import getTargetBrowsers from 'browserslist-to-esbuild';
-import { META_TAGS, PWA_CONFIG } from 'appConfig';
+import { META_TAGS, PWA_CONFIG } from './appConfig';
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === 'production';
