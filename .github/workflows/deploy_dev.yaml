@@ -1,0 +1,97 @@
+on:
+  push:
+    branches:
+      - '**'
+      - '!main'
+    paths-ignore:
+      - '*.md'
+
+name: deploy_dev
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+
+      - name: Setup Node and pnpm-store cache
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Dump versions
+        run: |
+          echo "node: $(node -v)"
+          echo "npm: $(npm -v)"
+          echo "pnpm: $(pnpm -v)"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Setup script cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules/.cache
+          key: script-cache-${{ hashFiles('**/pnpm-lock.yaml') }}-run-id-${{ github.run_id }}
+          restore-keys: script-cache-${{ hashFiles('**/pnpm-lock.yaml') }}-run-id-
+
+      - name: Run lint
+        run: pnpm lint
+
+  publish:
+    name: Build and publish
+    needs: lint
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+
+      - name: Setup Node and pnpm-store cache
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+
+      - name: Dump versions
+        run: |
+          echo "node: $(node -v)"
+          echo "npm: $(npm -v)"
+          echo "pnpm: $(pnpm -v)"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build:dev
+
+      - name: Expose Build Stats
+        uses: actions/upload-artifact@v3
+        with:
+          name: Build Stats
+          path: reports/build-stats.html
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        id: cfp
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          projectName: navigo
+          directory: dist
+          branch: develop
+
+      - run: |
+          echo "Deployed to ${{ steps.cfp.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "env: ${{ steps.cfp.outputs.environment }}" >> $GITHUB_STEP_SUMMARY
