@@ -12,7 +12,6 @@ module.exports = {
   rules: {
     ...propertyOrder.rules,
     'plugin/declaration-block-no-ignored-properties': true,
-    'custom-property-empty-line-before': 'never',
     'comment-empty-line-before': [
       'always',
       {
@@ -20,5 +19,30 @@ module.exports = {
         ignore: ['after-comment', 'stylelint-commands'],
       },
     ],
+    'custom-property-empty-line-before': 'never',
   },
+  overrides: [
+    {
+      files: '**/*.styles.js',
+      customSyntax: '@linaria/postcss-linaria',
+      rules: {
+        'property-no-vendor-prefix': true,
+        'string-no-newline': true,
+        'value-no-vendor-prefix': true,
+        'no-empty-source': null,
+        'no-extra-semicolons': null,
+        // /* pcss-lin */ placeholder comments are added during parsing
+        'comment-empty-line-before': [
+          'always',
+          {
+            except: ['first-nested'],
+            ignore: ['stylelint-commands'],
+            ignoreComments: [/pcss-lin/],
+          },
+        ],
+        //  '//' comments create unknown word issues while linting. Force using /* */
+        'no-invalid-double-slash-comments': true,
+      },
+    },
+  ],
 };

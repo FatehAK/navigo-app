@@ -29,11 +29,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-      <MapLoadedContext.Provider value={isMapLoaded}>
-        <RouterProvider router={router} />
-      </MapLoadedContext.Provider>
-    </div>
+    <MapLoadedContext.Provider value={isMapLoaded}>
+      <RouterProvider router={router} />
+    </MapLoadedContext.Provider>
   );
 };
 

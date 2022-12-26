@@ -1,11 +1,12 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import ViteReactPlugin from '@vitejs/plugin-react-swc';
+import ViteReactSWCPlugin from '@vitejs/plugin-react-swc';
 import ViteLegacy from '@vitejs/plugin-legacy';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { VitePWA } from 'vite-plugin-pwa';
 import ViteHTMLConfig from 'vite-plugin-html-config';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import ViteLinariaPlugin from '@linaria/vite';
 import strip from '@rollup/plugin-strip';
 import { visualizer } from 'rollup-plugin-visualizer';
 import getTargetBrowsers from 'browserslist-to-esbuild';
@@ -27,7 +28,11 @@ export default defineConfig(({ mode }) => {
       },
     },
     plugins: [
-      ViteReactPlugin(),
+      ViteReactSWCPlugin(),
+      ViteLinariaPlugin({
+        include: ['**/*.styles.js'],
+        sourceMap: !isProd,
+      }),
       ViteLegacy({
         // inject polyfills here for modern features if needed
         modernPolyfills: [],

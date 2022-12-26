@@ -3,8 +3,10 @@ const stylelintCmd = `stylelint --max-warnings=0 --custom-formatter=node_modules
 const eslintCmd = `eslint --max-warnings=0 --format=pretty --cache --cache-strategy content --cache-location ./node_modules/.cache/.eslintcache --fix`;
 
 module.exports = {
-  '**/*.{js,jsx}': [eslintCmd, prettierCmd],
-  '**/*.html': [stylelintCmd, eslintCmd, prettierCmd],
+  '**/!(*styles).{js,jsx}': [eslintCmd, prettierCmd],
+  // '**/*.jsx': [eslintCmd, prettierCmd],
+  // '**/*.styles.js': [eslintCmd, stylelintCmd, prettierCmd],
+  '**/*.html': [eslintCmd, stylelintCmd, prettierCmd],
   '**/*.css': [stylelintCmd, prettierCmd],
   '**/*.{md,json}': [prettierCmd],
 };
