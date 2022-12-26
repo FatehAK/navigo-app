@@ -39,7 +39,7 @@ specifiers:
   sanitize.css: ^13.0.0
   sharp: ^0.31.3
   stylelint: ^14.16.0
-  stylelint-config-clean-order: ^2.2.0
+  stylelint-config-clean-order: ^2.3.0
   stylelint-config-html: ^1.1.0
   stylelint-config-prettier: ^9.0.4
   stylelint-config-standard: ^29.0.0
@@ -96,7 +96,7 @@ devDependencies:
   rollup-plugin-visualizer: 5.8.3_rollup@2.79.1
   sharp: 0.31.3
   stylelint: 14.16.0
-  stylelint-config-clean-order: 2.2.0_stylelint@14.16.0
+  stylelint-config-clean-order: 2.3.0_stylelint@14.16.0
   stylelint-config-html: 1.1.0_bto6pmslw3cibsiuq6smxboytq
   stylelint-config-prettier: 9.0.4_stylelint@14.16.0
   stylelint-config-standard: 29.0.0_stylelint@14.16.0
@@ -6783,8 +6783,8 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-config-clean-order/2.2.0_stylelint@14.16.0:
-    resolution: {integrity: sha512-2m35QJ/Ba40gKF9nvqPKK1w4HoVEfMNA248h7AUKCgs7M8Z2RJFA5O4LxS6BUQRG3krTbdenBirjanXiIVlNjQ==}
+  /stylelint-config-clean-order/2.3.0_stylelint@14.16.0:
+    resolution: {integrity: sha512-lLHgpoS73pAWo/IScPpTCLPz96kBT/n9JmKLXcBWz+tIJigXqEBMja/0i1DRe+ozbdG18KUpyOzf7xB8RChwVw==}
     peerDependencies:
       stylelint: '>=14'
     dependencies:
