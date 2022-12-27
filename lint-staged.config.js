@@ -4,8 +4,7 @@ const eslintCmd = `eslint --max-warnings=0 --format=pretty --cache --cache-strat
 
 module.exports = {
   '**/!(*styles).{js,jsx}': [eslintCmd, prettierCmd],
-  // '**/*.jsx': [eslintCmd, prettierCmd],
-  // '**/*.styles.js': [eslintCmd, stylelintCmd, prettierCmd],
+  '**/*.styles.js': [eslintCmd, stylelintCmd, prettierCmd],
   '**/*.html': [eslintCmd, stylelintCmd, prettierCmd],
   '**/*.css': [stylelintCmd, prettierCmd],
   '**/*.{md,json}': [prettierCmd],

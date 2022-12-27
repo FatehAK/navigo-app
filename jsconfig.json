@@ -4,13 +4,10 @@
     "target": "esnext",
     "module": "esnext",
     "paths": {
-      "pages/*": ["./src/pages/*"],
-      "components/*": ["./src/components/*"],
-      "assets/*": ["./src/assets/*"],
-      "src/constants": ["./src/constants"],
-      "src/context": ["./src/context"],
+      "*": ["./src/*"],
       "appConfig": ["./appConfig"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

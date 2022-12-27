@@ -1,3 +1,5 @@
-const SearchPage = () => <div className="search-page">Search Page</div>;
+import { searchPage } from './SearchPage.styles';
+
+const SearchPage = () => <div className={searchPage}>Search Page</div>;
 
 export default SearchPage;

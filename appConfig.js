@@ -11,6 +11,8 @@ export const APP_CONFIG = {
       twitter: '@Fateh_AK_',
     },
   },
+  CLOUDFLARE_ANALYTICS_TOKEN: '7f2946e6ad2046e79876eb81ffd212ec',
+  GOOGLE_MAPS_API_KEY: 'AIzaSyDuqhcnldSASlaMVsvLvMc8DRewy0FzX4o',
   PROD_BASE_URL: 'https://navigo-app.pages.dev',
 };
 

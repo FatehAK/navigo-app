@@ -24,8 +24,9 @@ module.exports = {
   overrides: [
     {
       files: '**/*.styles.js',
-      customSyntax: '@linaria/postcss-linaria',
+      customSyntax: '@stylelint/postcss-css-in-js',
       rules: {
+        'function-url-quotes': 'never',
         'property-no-vendor-prefix': true,
         'string-no-newline': true,
         'value-no-vendor-prefix': true,

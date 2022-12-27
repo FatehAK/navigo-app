@@ -1,12 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import LandingPage from 'pages/landing-page';
-import SearchPage from 'pages/search-page';
-import { MapLoadedContext } from 'src/context';
+import { MapLoadedContext } from 'context/MapLoadedContext';
+import { defaultTheme } from 'theme/theme.styles';
+import { APP_CONFIG } from 'appConfig';
+
+const LandingPage = lazy(() => import('pages/landing-page/LandingPage'));
+const SearchPage = lazy(() => import('pages/search-page/SearchPage'));
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    index: true,
     element: <LandingPage />,
   },
   {
@@ -22,16 +25,17 @@ const App = () => {
     window.initMap = () => setMapLoaded(true);
     const script = document.createElement('script');
     // load the maps script asynchronously and give reference to the global callback
-    script.src =
-      'https://maps.googleapis.com/maps/api/js?key=AIzaSyDuqhcnldSASlaMVsvLvMc8DRewy0FzX4o&libraries=places,drawing,geometry&v=3&language=en&region=in&callback=initMap';
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${APP_CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places,drawing,geometry&v=3&language=en&region=in&callback=initMap`;
     script.async = true;
     document.body.appendChild(script);
   }, []);
 
   return (
-    <MapLoadedContext.Provider value={isMapLoaded}>
-      <RouterProvider router={router} />
-    </MapLoadedContext.Provider>
+    <div className={defaultTheme}>
+      <MapLoadedContext.Provider value={isMapLoaded}>
+        <RouterProvider router={router} />
+      </MapLoadedContext.Provider>
+    </div>
   );
 };
 
