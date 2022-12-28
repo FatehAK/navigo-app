@@ -1,6 +1,9 @@
-import { useContext } from 'react';
+import { useCallback, useContext, useEffect, useRef } from 'react';
 import { cx } from '@linaria/core';
 import { MapLoadedContext } from 'context/MapLoadedContext';
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import getUserLocation from 'utils/getUserLocation';
 import {
   landingPage,
   headerWrapper,
@@ -12,14 +15,72 @@ import {
   heroContentSubInfo,
   addressWrapper,
   addressInput,
-  zoomBtn,
+  locationBtn,
+  geocodeBtn,
   footer,
 } from './LandingPage.styles';
 
 const LandingPage = () => {
   const isMapLoaded = useContext(MapLoadedContext);
+  const navigate = useNavigate();
+  const inputRef = useRef(null);
 
-  console.log('## isMapLoaded: ', isMapLoaded);
+  const navigateToSearch = useCallback(
+    location => {
+      navigate('/search', { state: location });
+    },
+    [navigate]
+  );
+
+  useEffect(() => {
+    let listener;
+    if (isMapLoaded) {
+      const autoComplete = new window.google.maps.places.Autocomplete(inputRef.current, {
+        componentRestrictions: { country: 'IN' },
+        fields: ['geometry'],
+      });
+      listener = autoComplete.addListener('place_changed', () => {
+        const place = autoComplete.getPlace();
+        if (place.geometry) {
+          const { location } = place.geometry;
+          navigateToSearch({ lat: location.lat(), lng: location.lng() });
+        } else {
+          Swal.fire('Location not found try a different area?');
+        }
+      });
+    }
+    return () => {
+      if (listener) listener.remove();
+    };
+  }, [isMapLoaded, navigateToSearch]);
+
+  const geocodeAddress = () => {
+    if (isMapLoaded) {
+      const address = inputRef.current.value;
+      if (address.trim().length) {
+        const geocoder = new window.google.maps.Geocoder();
+        geocoder.geocode({ address, componentRestrictions: { country: 'IN' } }, (results, status) => {
+          if (status === window.google.maps.GeocoderStatus.OK) {
+            const { location } = results[0].geometry;
+            navigateToSearch({ lat: location.lat(), lng: location.lng() });
+          } else {
+            Swal.fire('Location not found try a different area?');
+          }
+        });
+      } else {
+        Swal.fire('Please enter your city first');
+      }
+    }
+  };
+
+  const fetchUserLocation = async () => {
+    try {
+      const location = await getUserLocation();
+      navigateToSearch(location);
+    } catch (err) {
+      Swal.fire('Unable to determine location');
+    }
+  };
 
   return (
     <div className={landingPage}>
@@ -33,12 +94,15 @@ const LandingPage = () => {
         </div>
         <div className={heroContentSub}>
           <div className={cx(heroContentSubImg, 'animate__animated', 'animate__rotateIn', 'animate__faster')} />
-          <span className={heroContentSubInfo}>TO PLACES AROUND YOU</span>
+          <span className={heroContentSubInfo}>TO PLACES NEAR YOU</span>
         </div>
       </div>
       <div className={addressWrapper}>
-        <input type="text" className={addressInput} placeholder="Search city" />
-        <button type="button" className={zoomBtn}>
+        <input ref={inputRef} type="text" className={addressInput} placeholder="Search city" />
+        <button type="button" onClick={fetchUserLocation} className={locationBtn}>
+          <i className="fas fa-location-crosshairs" />
+        </button>
+        <button type="button" onClick={geocodeAddress} className={geocodeBtn}>
           <i className="fas fa-search" />
         </button>
       </div>

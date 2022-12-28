@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MapLoadedContext } from 'context/MapLoadedContext';
 import { defaultTheme } from 'theme/theme.styles';
@@ -14,7 +14,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/search',
-    element: <SearchPage />,
+    element: (
+      <Suspense>
+        <SearchPage />
+      </Suspense>
+    ),
   },
 ]);
 

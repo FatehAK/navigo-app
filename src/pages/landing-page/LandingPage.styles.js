@@ -154,7 +154,9 @@ export const addressWrapper = css`
 
 export const addressInput = css`
   flex: 1 1 0;
-  padding: 9px 15px;
+  height: 36px;
+  padding-right: 15px;
+  padding-left: 15px;
   font-size: 0.96rem;
   background: #fff;
   border: none;
@@ -164,9 +166,31 @@ export const addressInput = css`
   box-shadow: 15px 5px 20px rgb(0 0 0 / 19%), 20px 15px 20px rgb(0 0 0 / 15.8%);
 `;
 
-export const zoomBtn = css`
+export const locationBtn = css`
   cursor: pointer;
-  padding: 9px 12px;
+  height: 36px;
+  padding-right: 16px;
+  font-size: 1.24rem;
+  color: var(--primary-color);
+  background-color: #fff;
+  border: 0;
+  box-shadow: 10px 10px 20px -10px rgb(0 0 0 / 19%);
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const geocodeBtn = css`
+  cursor: pointer;
+  height: 36px;
+  padding-right: 12px;
+  padding-left: 12px;
   font-size: 0.96rem;
   color: #fff;
   background: var(--primary-color);
