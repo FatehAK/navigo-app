@@ -1,7 +1,7 @@
 import mapStyle from 'assets/map-style.json';
 
 export const MAP_CONFIG = {
-  zoom: 6,
+  zoom: 14,
   styles: mapStyle,
   mapTypeControl: false,
   fullscreenControl: false,

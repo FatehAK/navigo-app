@@ -14,11 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/search',
-    element: (
-      <Suspense>
-        <SearchPage />
-      </Suspense>
-    ),
+    element: <SearchPage />,
   },
 ]);
 
@@ -37,7 +33,9 @@ const App = () => {
   return (
     <div className={defaultTheme}>
       <MapLoadedContext.Provider value={isMapLoaded}>
-        <RouterProvider router={router} />
+        <Suspense fallback={<div>Loading..</div>}>
+          <RouterProvider router={router} />
+        </Suspense>
       </MapLoadedContext.Provider>
     </div>
   );

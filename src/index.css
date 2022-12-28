@@ -16,3 +16,7 @@ body {
   padding: 0;
   font-family: Lato, sans-serif;
 }
+
+li {
+  list-style-type: none;
+}

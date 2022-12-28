@@ -31,6 +31,7 @@
     "maintained node versions"
   ],
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1",
@@ -105,5 +106,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@7.20.0"
+  "packageManager": "pnpm@7.21.0"
 }
