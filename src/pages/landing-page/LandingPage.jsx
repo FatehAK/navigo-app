@@ -99,10 +99,10 @@ const LandingPage = () => {
       </div>
       <div className={addressWrapper}>
         <input ref={inputRef} type="text" className={addressInput} placeholder="Search city" />
-        <button type="button" onClick={fetchUserLocation} className={locationBtn}>
+        <button type="button" onClick={fetchUserLocation} className={locationBtn} aria-label="user location">
           <i className="fas fa-location-crosshairs" />
         </button>
-        <button type="button" onClick={geocodeAddress} className={geocodeBtn}>
+        <button type="button" onClick={geocodeAddress} className={geocodeBtn} aria-label="search">
           <i className="fas fa-search" />
         </button>
       </div>
