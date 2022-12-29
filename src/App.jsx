@@ -27,7 +27,8 @@ const App = () => {
     script.src = `https://maps.googleapis.com/maps/api/js?key=${
       import.meta.env.VITE_GOOGLE_MAPS_API_KEY
     }&libraries=places,drawing,geometry&v=3&language=en&region=in&callback=initMap`;
-    script.async = true;
+    script.async = false;
+    script.defer = true;
     document.body.appendChild(script);
   }, []);
 
