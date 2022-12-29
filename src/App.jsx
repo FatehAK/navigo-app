@@ -2,7 +2,6 @@ import { useEffect, useState, lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MapLoadedContext } from 'context/MapLoadedContext';
 import { defaultTheme } from 'theme/theme.styles';
-import { APP_CONFIG } from 'appConfig';
 
 const LandingPage = lazy(() => import('pages/landing-page/LandingPage'));
 const SearchPage = lazy(() => import('pages/search-page/SearchPage'));
@@ -25,7 +24,9 @@ const App = () => {
     window.initMap = () => setMapLoaded(true);
     const script = document.createElement('script');
     // load the maps script asynchronously and give reference to the global callback
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${APP_CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places,drawing,geometry&v=3&language=en&region=in&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${
+      import.meta.env.VITE_GOOGLE_MAPS_API_KEY
+    }&libraries=places,drawing,geometry&v=3&language=en&region=in&callback=initMap`;
     script.async = true;
     document.body.appendChild(script);
   }, []);

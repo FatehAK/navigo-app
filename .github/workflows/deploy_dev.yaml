@@ -50,6 +50,8 @@ jobs:
     permissions:
       contents: read
       deployments: write
+    env:
+      VITE_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2

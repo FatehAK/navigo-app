@@ -12,7 +12,6 @@ export const APP_CONFIG = {
     },
   },
   CLOUDFLARE_ANALYTICS_TOKEN: '7f2946e6ad2046e79876eb81ffd212ec',
-  GOOGLE_MAPS_API_KEY: 'AIzaSyCRT0X-fcLe1FlVEfRhZu94wrSSfaUQmWM',
   PROD_BASE_URL: 'https://navigo-app.pages.dev',
 };
 
