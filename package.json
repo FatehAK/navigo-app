@@ -35,6 +35,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1",
+    "react-transition-group": "^4.4.5",
     "sanitize.css": "^13.0.0",
     "sweetalert2": "^11.6.16"
   },
@@ -89,7 +90,6 @@
     "svgo": "^3.0.2",
     "terser": "^5.16.1",
     "vite": "^4.0.3",
-    "vite-jsconfig-paths": "^2.0.1",
     "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-image-optimizer": "^1.0.3",
     "vite-plugin-minify": "^1.5.2",

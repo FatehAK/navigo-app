@@ -137,17 +137,16 @@ export const heroContentSubInfo = css`
 `;
 
 export const addressWrapper = css`
-  position: fixed;
-  z-index: 10;
-  top: 47%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 640px;
+  margin-top: 100px;
   padding: 0 44px;
 
   @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 50px;
     padding: 0 20px;
   }
 `;
@@ -158,12 +157,12 @@ export const addressInput = css`
   padding-right: 15px;
   padding-left: 15px;
   font-size: 0.96rem;
+  color: var(--secondary-color);
   background: #fff;
   border: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px 0 0 10px;
   outline: none;
-  box-shadow: 15px 5px 20px rgb(0 0 0 / 19%), 20px 15px 20px rgb(0 0 0 / 15.8%);
+  box-shadow: 15px 5px 20px rgb(0 0 0 / 19%), 20px 15px 20px rgb(0 0 0 / 15%);
 `;
 
 export const locationBtn = css`
@@ -174,7 +173,6 @@ export const locationBtn = css`
   color: var(--primary-color);
   background-color: #fff;
   border: 0;
-  box-shadow: 10px 10px 20px -10px rgb(0 0 0 / 19%);
   transition: color 0.3s;
 
   &:hover {
@@ -197,7 +195,6 @@ export const geocodeBtn = css`
   border: 0;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 10px 10px 20px -10px rgb(0 0 0 / 19%);
   transition: background 0.3s;
 
   &:hover {

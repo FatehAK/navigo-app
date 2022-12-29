@@ -38,7 +38,7 @@
 
 .action-btn:nth-last-child(1) {
   background-color: var(--primary-color);
-  background-image: url('../../assets/images/pencil-ruler-solid.svg');
+  background-image: url('assets/images/pencil-ruler-solid.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px;

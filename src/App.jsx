@@ -33,7 +33,7 @@ const App = () => {
   return (
     <div className={defaultTheme}>
       <MapLoadedContext.Provider value={isMapLoaded}>
-        <Suspense fallback={<div>Loading..</div>}>
+        <Suspense fallback={<></>}>
           <RouterProvider router={router} />
         </Suspense>
       </MapLoadedContext.Provider>

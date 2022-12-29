@@ -1,5 +1,5 @@
+import { resolve } from 'path';
 import { defineConfig, splitVendorChunkPlugin as ViteVendorChunkSplit } from 'vite';
-import ViteJSConfigPaths from 'vite-jsconfig-paths';
 import ViteReactPlugin from '@vitejs/plugin-react';
 import ViteLinariaPlugin from '@linaria/vite';
 import ViteLegacy from '@vitejs/plugin-legacy';
@@ -18,8 +18,19 @@ export default defineConfig(({ mode }) => {
   console.log(`✨ Running in ${isProd ? 'Production' : 'Development'}.\n`);
 
   return {
+    resolve: {
+      alias: {
+        pages: resolve(__dirname, 'src/pages'),
+        components: resolve(__dirname, 'src/components'),
+        assets: resolve(__dirname, 'src/assets'),
+        constants: resolve(__dirname, 'src/constants'),
+        context: resolve(__dirname, 'src/context'),
+        theme: resolve(__dirname, 'src/theme'),
+        utils: resolve(__dirname, 'src/utils'),
+        appConfig: resolve(__dirname, './appConfig'),
+      },
+    },
     plugins: [
-      ViteJSConfigPaths(),
       ViteReactPlugin(),
       ViteLinariaPlugin({
         include: ['**/*.styles.js'],

@@ -22,11 +22,11 @@ export const getInfoWindowTemplate = place => {
 
   const getPhotoTemplate = src => `
     <div class="info-img-container">
-      <button class="info-img-prev">
+      <button type="button" class="info-img-prev">
         <li><i class="fa fa-chevron-left"></i></li>
       </button>
       <img class="info-img" src="${src}" alt="Place photo">
-      <button class="info-img-next">
+      <button type="button" class="info-img-next">
          <li><i class="fa fa-chevron-right"></i></li>
       </button>
     </div>
@@ -189,7 +189,7 @@ export const searchInPolygon = (map, markers, polygon) => {
 };
 
 // plot the route to destination
-export const plotRoute = (routeMarkerRef, directionsDisplayRef, map, place, infoWindow) => {
+export const plotRoute = (routeMarkerRef, directionsDisplayRef, map, place, infoWindow, sidebarRef) => {
   if (routeMarkerRef.current) {
     window.google.maps.event.addListenerOnce(routeMarkerRef.current, 'click', () => {
       if (routeMarkerRef.current) {
@@ -239,12 +239,11 @@ export const plotRoute = (routeMarkerRef, directionsDisplayRef, map, place, info
               const dirBtn = document.querySelector('.direction-btn');
               if (dirBtn) {
                 dirBtn.addEventListener('click', () => {
-                  // TODO:
-                  // self.childRef.current.directionRef.current.innerHTML = '';
-                  // if (directionsDisplayRef.current) {
-                  //   directionsDisplayRef.current.setPanel(self.childRef.current.directionRef.current);
-                  // }
-                  // self.childRef.current.openSide();
+                  sidebarRef.current.getContentRef().current.innerHTML = '';
+                  if (directionsDisplayRef.current) {
+                    directionsDisplayRef.current.setPanel(sidebarRef.current.getContentRef().current);
+                  }
+                  sidebarRef.current.open();
                 });
               }
             } else {

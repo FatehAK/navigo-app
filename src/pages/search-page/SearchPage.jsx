@@ -3,6 +3,7 @@ import { cx } from '@linaria/core';
 import { useLocation, Link } from 'react-router-dom';
 import { MAP_CONFIG } from 'constants/index';
 import FloatingActions from 'components/floating-actions/FloatingActions';
+import Sidebar from 'components/sidebar/Sidebar';
 import { MapLoadedContext } from 'context/MapLoadedContext';
 import Swal from 'sweetalert2';
 import placeIcon from 'assets/images/place.svg';
@@ -15,8 +16,8 @@ import {
   searchInPolygon,
   getPolyBounds,
   plotRoute,
-} from './mapUtils';
-import './google-styles.css';
+} from 'utils/mapUtils';
+import './googleStyles.css';
 import { searchPage, mapContainer, searchContainer, goBackBtn, searchInputStyle, searchBtn } from './SearchPage.styles';
 
 const SearchPage = () => {
@@ -34,6 +35,7 @@ const SearchPage = () => {
   const routeMarkerRef = useRef(null);
   const drawingManagerRef = useRef(null);
   const searchBoxRef = useRef(null);
+  const sidebarRef = useRef(null);
 
   const resetListeners = useCallback(() => {
     if (placeInfoWindowRef.current) {
@@ -58,7 +60,7 @@ const SearchPage = () => {
       const createDestinationMarker = evt => {
         const image = { url: destinationIcon, scaledSize: new window.google.maps.Size(36, 36) };
         routeMarkerRef.current = new window.google.maps.Marker({ position: evt.latLng, map, icon: image });
-        plotRoute(routeMarkerRef, directionsDisplayRef, map, place, infoWindow);
+        plotRoute(routeMarkerRef, directionsDisplayRef, map, place, infoWindow, sidebarRef);
       };
 
       const btnRoute = document.querySelector('.btn-route');
@@ -68,7 +70,7 @@ const SearchPage = () => {
             infoWindow.setContent('Please select your origin');
           } else {
             infoWindow.setContent(getInfoWindowRouteTemplate());
-            plotRoute(routeMarkerRef, directionsDisplayRef, map, place, infoWindow);
+            plotRoute(routeMarkerRef, directionsDisplayRef, map, place, infoWindow, sidebarRef);
           }
           map.addListener('click', evt => {
             if (!routeMarkerRef.current) createDestinationMarker(evt);
@@ -128,8 +130,7 @@ const SearchPage = () => {
             marker.setAnimation(null);
             // clearing the set listeners
             resetListeners();
-            // TODO:
-            // self.childRef.current.closeSide();
+            sidebarRef.current.close();
           });
         }
       });
@@ -173,8 +174,7 @@ const SearchPage = () => {
             // clearing the set listeners
             resetListeners();
             window.google.maps.event.clearListeners(map, 'click');
-            // TODO:
-            // self.childRef.current.closeSide();
+            sidebarRef.current.close();
           }
         });
 
@@ -293,8 +293,8 @@ const SearchPage = () => {
       }
       window.google.maps.event.clearListeners(map, 'click');
       resetListeners();
-      // TODO:
-      // this.childRef.current.closeSide();
+      map.setZoom(14);
+      sidebarRef.current.close();
     }
   };
 
@@ -332,6 +332,7 @@ const SearchPage = () => {
 
   return (
     <div className={searchPage}>
+      <Sidebar ref={sidebarRef} />
       <div className={cx(searchContainer, 'animate__animated', 'animate__fadeInRight', 'animate__faster')}>
         <Link to="/" className={goBackBtn}>
           <i className="fas fa-chevron-left" />

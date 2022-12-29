@@ -41,7 +41,6 @@ export const goBackBtn = css`
   background: var(--primary-color);
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 0 0 rgb(0 0 0 / 23%);
   transition: background 0.3s;
 
   &:hover {
@@ -56,6 +55,7 @@ export const searchInputStyle = css`
   font-size: 0.9rem;
   color: var(--secondary-color);
   border: none;
+  border-radius: 0;
   outline: none;
   box-shadow: 10px 5px 20px rgb(0 0 0 / 19%), 0 0 0 rgb(0 0 0 / 23%);
 `;
@@ -64,12 +64,12 @@ export const searchBtn = css`
   cursor: pointer;
   height: 36px;
   padding: 0 12px;
+  font-size: 0.9rem;
   color: var(--secondary-color);
   background: #fff;
   border: 0;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 10px 10px 20px -10px rgb(0 0 0 / 19%);
   transition: color 0.3s;
 
   &:hover {

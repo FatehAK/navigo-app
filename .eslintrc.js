@@ -21,6 +21,8 @@ module.exports = {
     'func-names': 'off',
     'no-param-reassign': 'off',
     'sonarjs/cognitive-complexity': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
   },
   plugins: ['only-warn', 'react', 'sonarjs', 'promise', 'html', '@html-eslint'],
