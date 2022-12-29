@@ -1,8 +1,8 @@
 import { useCallback, useContext, useEffect, useRef } from 'react';
-import { cx } from '@linaria/core';
-import { MapLoadedContext } from 'context/MapLoadedContext';
 import { useNavigate } from 'react-router-dom';
+import { cx } from '@linaria/core';
 import Swal from 'sweetalert2';
+import { MapLoadedContext } from 'context/MapLoadedContext';
 import getUserLocation from 'utils/getUserLocation';
 import {
   landingPage,

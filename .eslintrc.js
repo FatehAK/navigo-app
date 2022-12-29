@@ -1,3 +1,11 @@
+const getImportGroups = () => {
+  const external = ['react', 'react-router-dom', '@linaria/+(core|react)'];
+  const internal = ['pages/**', 'components/**', 'context/**', 'utils/**', 'theme/**', 'constants/**', 'assets/**'];
+  return external
+    .map(pattern => ({ pattern, group: 'external', position: 'before' }))
+    .concat(internal.map(pattern => ({ pattern, group: 'internal', position: 'before' })));
+};
+
 module.exports = {
   root: true,
   env: {
@@ -23,6 +31,16 @@ module.exports = {
     'sonarjs/cognitive-complexity': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    'sort-imports': 'off', // turned off in favour of import/order rule
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'ignore',
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        pathGroups: getImportGroups(),
+        pathGroupsExcludedImportTypes: ['react'],
+      },
+    ],
     'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
   },
   plugins: ['only-warn', 'react', 'sonarjs', 'promise', 'html', '@html-eslint'],

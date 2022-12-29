@@ -1,13 +1,10 @@
 import { useState, useContext, useEffect, useRef, useCallback } from 'react';
-import { cx } from '@linaria/core';
 import { useLocation, Link } from 'react-router-dom';
-import { MAP_CONFIG } from 'constants/index';
+import { cx } from '@linaria/core';
+import Swal from 'sweetalert2';
 import FloatingActions from 'components/floating-actions/FloatingActions';
 import Sidebar from 'components/sidebar/Sidebar';
 import { MapLoadedContext } from 'context/MapLoadedContext';
-import Swal from 'sweetalert2';
-import placeIcon from 'assets/images/place.svg';
-import destinationIcon from 'assets/images/origin.svg';
 import {
   initInfoWindowCarousel,
   initStreetView,
@@ -17,6 +14,9 @@ import {
   getPolyBounds,
   plotRoute,
 } from 'utils/mapUtils';
+import { MAP_CONFIG } from 'constants/index';
+import placeIcon from 'assets/images/place.svg';
+import destinationIcon from 'assets/images/origin.svg';
 import './googleStyles.css';
 import { searchPage, mapContainer, searchContainer, goBackBtn, searchInputStyle, searchBtn } from './SearchPage.styles';
 
