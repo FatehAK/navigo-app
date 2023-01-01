@@ -1,12 +1,11 @@
 on:
-  push:
+  pull_request:
     branches:
-      - '**'
-      - '!main'
+      - main
     paths-ignore:
-      - '*.md'
+      - '**.md'
 
-name: deploy_dev
+name: validate_pr
 
 jobs:
   lint:
@@ -41,17 +40,10 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-  publish:
-    name: Build and publish
+  Build:
+    name: Build
     needs: lint
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ github.job }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
-    env:
-      VITE_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
@@ -72,28 +64,11 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build:dev
+        run: pnpm build:prod
 
-      - name: Expose Build Stats
+      - name: Expose build report
         uses: actions/upload-artifact@v3
         with:
           name: Build Stats
           path: reports/build-stats.html
-          if-no-files-found: ignore
           retention-days: 7
-
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
-        id: cfp
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          projectName: navigo-app
-          directory: dist
-          branch: develop
-
-      - run: |
-          echo "Deployed to ${{ steps.cfp.outputs.url }}" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "env: ${{ steps.cfp.outputs.environment }}" >> $GITHUB_STEP_SUMMARY
