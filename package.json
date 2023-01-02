@@ -58,7 +58,7 @@
     "czg": "1.4.1",
     "eslint": "^8.31.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-html": "^7.1.0",
