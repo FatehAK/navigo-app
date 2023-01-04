@@ -59,7 +59,7 @@ specifiers:
   terser: ^5.16.1
   vite: ^4.0.4
   vite-plugin-html-config: ^1.0.11
-  vite-plugin-image-optimizer: ^1.0.6
+  vite-plugin-image-optimizer: ^1.0.7
   vite-plugin-minify: ^1.5.2
   vite-plugin-pwa: ^0.14.1
 
@@ -124,7 +124,7 @@ devDependencies:
   terser: 5.16.1
   vite: 4.0.4_u4qtfkm32ppnvboczhv56utkqi
   vite-plugin-html-config: 1.0.11_vite@4.0.4
-  vite-plugin-image-optimizer: 1.0.6_vite@4.0.4
+  vite-plugin-image-optimizer: 1.0.7_vite@4.0.4
   vite-plugin-minify: 1.5.2_vite@4.0.4
   vite-plugin-pwa: 0.14.1_fh56thzkyakgjs6jm6gbtbzxsq
 
@@ -7000,8 +7000,8 @@ packages:
       vite: 4.0.4_u4qtfkm32ppnvboczhv56utkqi
     dev: true
 
-  /vite-plugin-image-optimizer/1.0.6_vite@4.0.4:
-    resolution: {integrity: sha512-ZcMbj49gboLrOWIkBUJqlLBrwfnC/zaohFNfg8p2vXa1jDe14E5te8lmGQheXRrjTK0G85XUxfunLqXabNy7cQ==}
+  /vite-plugin-image-optimizer/1.0.7_vite@4.0.4:
+    resolution: {integrity: sha512-qAAkgbBqd10JSveENAkG0kQBoNdU16vDObqcAU+624cVenQUp/ter5/ElD4UltcjdSBqFSS0CkLZhSCdw9zHuQ==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: '>=3 || >=4'
