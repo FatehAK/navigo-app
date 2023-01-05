@@ -12,7 +12,7 @@ specifiers:
   '@types/react': ^18.0.26
   '@types/react-dom': ^18.0.10
   '@vitejs/plugin-legacy': ^3.0.1
-  '@vitejs/plugin-react': ^3.0.0
+  '@vitejs/plugin-react': ^3.0.1
   browserslist-to-esbuild: ^1.2.0
   change-case: ^4.1.2
   concurrently: ^7.6.0
@@ -84,7 +84,7 @@ devDependencies:
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.10
   '@vitejs/plugin-legacy': 3.0.1_terser@5.16.1+vite@4.0.4
-  '@vitejs/plugin-react': 3.0.0_vite@4.0.4
+  '@vitejs/plugin-react': 3.0.1_vite@4.0.4
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 7.6.0
@@ -2370,8 +2370,8 @@ packages:
       vite: 4.0.4_u4qtfkm32ppnvboczhv56utkqi
     dev: true
 
-  /@vitejs/plugin-react/3.0.0_vite@4.0.4:
-    resolution: {integrity: sha512-1mvyPc0xYW5G8CHQvJIJXLoMjl5Ct3q2g5Y2s6Ccfgwm45y48LBvsla7az+GkkAtYikWQ4Lxqcsq5RHLcZgtNQ==}
+  /@vitejs/plugin-react/3.0.1_vite@4.0.4:
+    resolution: {integrity: sha512-mx+QvYwIbbpOIJw+hypjnW1lAbKDHtWK5ibkF/V1/oMBu8HU/chb+SnqJDAsLq1+7rGqjktCEomMTM5KShzUKQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0 || >=4
