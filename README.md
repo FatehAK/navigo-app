@@ -1,13 +1,17 @@
 <div align="center">
-  <h2>Navigo</h2>
+  <a href="https://navigo-app.pages.dev/">
+    <img width="180" height="180" hspace="10"
+      src="https://navigo-app.pages.dev/icons/icon-512-512.png" alt="navigo logo">
+  </a>
+  <h1>Navigo</h1>
   <img src="https://img.shields.io/github/package-json/v/fatehak/navigo-app" alt="version" />
 <img src="https://img.shields.io/github/package-json/dependency-version/fatehak/navigo-app/react" alt="vite" />
 <img src="https://img.shields.io/github/package-json/dependency-version/fatehak/navigo-app/dev/vite" alt="vite" />
 <img src="https://img.shields.io/badge/pnpm-latest-yellow" alt="pnpm" />
-  <img src="https://img.shields.io/github/actions/workflow/status/fatehak/navigo-app/deploy_prod.yaml?branch=main" alt="build status" />
+  <img src="https://img.shields.io/github/actions/workflow/status/fatehak/navigo-app/lint_build_publish.yaml?branch=main" alt="build status" />
 </div>
 
-Navigo makes searching for places quick and easy by adding drawing capabilities to the map. It makes finding rentals in a particular area or even searching for matching restaurants just a click
+Navigo makes searching for places quick and easy by adding drawing capabilities to the map. It makes finding rentals in a particular area or searching for restaurants just a click
 away! The app is developed with React.js with PWA support so it can be easily installed on mobile devices as well.
 
 You can view the app at - https://navigo-app.pages.dev
