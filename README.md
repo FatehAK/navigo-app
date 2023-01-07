@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://navigo-app.pages.dev/">
-    <img width="180" height="180" hspace="10"
+    <img width="150" height="150" hspace="10"
       src="https://navigo-app.pages.dev/icons/icon-512-512.png" alt="navigo logo">
   </a>
   <h1>Navigo</h1>
