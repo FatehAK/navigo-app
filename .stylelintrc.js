@@ -23,7 +23,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: '**/*.styles.js',
+      files: '**/*.{styles.js,jsx}',
       customSyntax: '@stylelint/postcss-css-in-js',
       rules: {
         'function-url-quotes': 'never',
