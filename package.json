@@ -37,7 +37,7 @@
     "react-router-dom": "^6.6.2",
     "react-transition-group": "^4.4.5",
     "sanitize.css": "^13.0.0",
-    "sweetalert2": "^11.6.16"
+    "sweetalert2": "^11.7.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.1",
@@ -68,7 +68,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sonarjs": "^0.17.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "postcss-html": "^1.5.0",
