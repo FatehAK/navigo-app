@@ -37,7 +37,7 @@
     "react-router-dom": "^6.7.0",
     "react-transition-group": "^4.4.5",
     "sanitize.css": "^13.0.0",
-    "sweetalert2": "^11.7.0"
+    "sweetalert2": "^11.7.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
@@ -105,5 +105,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@7.25.1"
+  "packageManager": "pnpm@7.26.0"
 }

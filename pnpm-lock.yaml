@@ -55,7 +55,7 @@ specifiers:
   stylelint-formatter-pretty: ^3.1.1
   stylelint-order: ^5.0.0
   svgo: ^3.0.2
-  sweetalert2: ^11.7.0
+  sweetalert2: ^11.7.1
   terser: ^5.16.1
   vite: ^4.0.4
   vite-plugin-html-config: ^1.0.11
@@ -70,7 +70,7 @@ dependencies:
   react-router-dom: 6.7.0_biqbaboplfbrettd7655fr4n2y
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
   sanitize.css: 13.0.0
-  sweetalert2: 11.7.0
+  sweetalert2: 11.7.1
 
 devDependencies:
   '@commitlint/cli': 17.4.2
@@ -6792,8 +6792,8 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /sweetalert2/11.7.0:
-    resolution: {integrity: sha512-ICeeGhIsmzCwRD/XjZrBYk+SDQzwfGvIdxkeSpPFgkPwbnoaGnaZ4cOb7AD/iC5o50snQUF6w23MfFAGk1+J7A==}
+  /sweetalert2/11.7.1:
+    resolution: {integrity: sha512-+1bnkbqBl64FnZmi3g4SzAi4F3pL3S2jF1YQvrysv4GbgizfeFqGkJopxR3FnV/eJm6w2SQ2oAmCxSIBjgP/ag==}
     dev: false
 
   /systemjs/6.13.0:
