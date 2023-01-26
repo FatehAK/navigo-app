@@ -85,8 +85,6 @@ jobs:
           name: Sourcemaps
           path: |
             dist/**/*.map
-            !dist/**/workbox*.map
-            !dist/**/sw*.map
           if-no-files-found: ignore
           retention-days: 30
 

@@ -57,7 +57,7 @@ export const heroContent = css`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    margin-top: 45px;
+    margin-top: 40px;
     margin-left: 20px;
   }
 `;
@@ -65,10 +65,10 @@ export const heroContent = css`
 export const heroContentMain = css`
   max-width: 500px;
   font-family: Pacifico, cursive;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.6rem;
+  font-weight: 700;
   color: var(--secondary-color);
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
 
   & > i {
     margin-left: 12px;
@@ -76,17 +76,16 @@ export const heroContentMain = css`
   }
 
   @media (max-width: ${breakpoints.desktop}) {
-    font-size: 2.75rem;
+    font-size: 3.4rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 300px;
-    font-size: 2.2rem;
-    letter-spacing: 0.3rem;
+    font-size: 2.8rem;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    font-size: 1.75rem;
+    font-size: 2.4rem;
   }
 `;
 

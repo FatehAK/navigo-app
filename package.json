@@ -73,10 +73,10 @@
     "lint-staged": "^13.1.0",
     "postcss-html": "^1.5.0",
     "postcss-nested": "^6.0.0",
-    "postcss-preset-env": "^7.8.3",
+    "postcss-preset-env": "^8.0.0",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.8.3",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.1.2",
     "rollup-plugin-visualizer": "^5.9.0",
     "sharp": "^0.31.3",
     "stylelint": "^14.16.1",
@@ -86,14 +86,15 @@
     "stylelint-config-standard": "^29.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-formatter-pretty": "^3.1.1",
-    "stylelint-order": "^5.0.0",
+    "stylelint-order": "^6.0.1",
     "svgo": "^3.0.2",
     "terser": "^5.16.1",
     "vite": "^4.0.4",
     "vite-plugin-html-config": "^1.0.11",
     "vite-plugin-image-optimizer": "^1.0.7",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-pwa": "^0.14.1"
+    "vite-plugin-pwa": "^0.14.1",
+    "workbox-window": "^6.5.4"
   },
   "pnpm": {
     "peerDependencyRules": {

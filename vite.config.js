@@ -71,6 +71,7 @@ export default defineConfig(({ mode }) => {
     server: {
       open: true,
       port: 3000,
+      host: true,
       hmr: { overlay: false },
     },
     build: {

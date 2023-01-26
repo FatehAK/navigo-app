@@ -122,6 +122,9 @@ export const META_TAGS = [
 ];
 
 export const PWA_CONFIG = {
+  base: '/',
+  registerType: 'autoUpdate',
+  includeAssets: ['favicon.ico', 'robots.txt', 'icons/*.png'],
   manifest: {
     name: APP_CONFIG.META.name,
     short_name: APP_CONFIG.META.name,
@@ -131,7 +134,6 @@ export const PWA_CONFIG = {
     start_url: '.',
     orientation: 'any',
     display: 'standalone',
-    includeAssets: ['favicon.ico', 'robots.txt', 'icons/*.png'],
     icons: [
       {
         src: '/icons/icon-512-512.png',
@@ -171,10 +173,11 @@ export const PWA_CONFIG = {
       },
     ],
   },
-  registerType: 'prompt',
   workbox: {
+    sourcemap: false,
     cleanupOutdatedCaches: true,
     maximumFileSizeToCacheInBytes: 4194304,
+    globPatterns: ['**/*.{html,css,js,svg,png,ico,json,woff2,txt}'],
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

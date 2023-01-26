@@ -1,5 +1,6 @@
 import { useEffect, useState, lazy, Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useRegisterSW } from 'virtual:pwa-register/react';
 import { MapLoadedContext } from 'context/MapLoadedContext';
 import { defaultTheme } from 'theme/theme.styles';
 
@@ -17,8 +18,20 @@ const router = createBrowserRouter([
   },
 ]);
 
+const intervalMS = 60 * 60 * 1000; // periodically check sw for changes every 1 hr
+
 const App = () => {
   const [isMapLoaded, setMapLoaded] = useState(false);
+
+  useRegisterSW({
+    onRegistered(sw) {
+      if (sw) {
+        setInterval(() => {
+          sw.update();
+        }, intervalMS);
+      }
+    },
+  });
 
   useEffect(() => {
     window.initMap = () => setMapLoaded(true);

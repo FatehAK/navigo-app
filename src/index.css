@@ -2,19 +2,23 @@
   font-size: 100%;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: Lato, sans-serif;
+}
+
+/* custom fonts */
+@font-face {
+  font-family: Pacifico;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+
+  /* regular name, postscript name, server url */
+  src: local('Pacifico Bold'), local('Pacifico-Bold'), url('/fonts/pacifico/Pacifico-Bold.woff2') format('woff2');
 }
 
 li {
