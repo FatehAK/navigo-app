@@ -61,7 +61,7 @@ specifiers:
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.0.7
   vite-plugin-minify: ^1.5.2
-  vite-plugin-pwa: ^0.14.1
+  vite-plugin-pwa: ^0.14.2
   workbox-window: ^6.5.4
 
 dependencies:
@@ -127,7 +127,7 @@ devDependencies:
   vite-plugin-html-config: 1.0.11_vite@4.1.1
   vite-plugin-image-optimizer: 1.0.7_vite@4.1.1
   vite-plugin-minify: 1.5.2_vite@4.1.1
-  vite-plugin-pwa: 0.14.1_3vd7o33jrhd5kouhgwquhspjhi
+  vite-plugin-pwa: 0.14.2_3vd7o33jrhd5kouhgwquhspjhi
   workbox-window: 6.5.4
 
 packages:
@@ -7180,8 +7180,8 @@ packages:
       vite: 4.1.1_olwsorijm55qv7ky4zl6koxrg4
     dev: true
 
-  /vite-plugin-pwa/0.14.1_3vd7o33jrhd5kouhgwquhspjhi:
-    resolution: {integrity: sha512-5zx7yhQ8RTLwV71+GA9YsQQ63ALKG8XXIMqRJDdZkR8ZYftFcRgnzM7wOWmQZ/DATspyhPih5wCdcZnAIsM+mA==}
+  /vite-plugin-pwa/0.14.2_3vd7o33jrhd5kouhgwquhspjhi:
+    resolution: {integrity: sha512-3nTW1LX5i4l2qeuT0ypGyo52KtXagQoW4qdpMxHyUS/qvloa3BHLytQQfdNbU3cXTqV+cfuN99RXXKHiYDiLTA==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0 || >=4
       workbox-build: ^6.5.4
