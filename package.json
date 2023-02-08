@@ -45,7 +45,7 @@
     "@html-eslint/parser": "^0.16.0",
     "@linaria/core": "^4.2.6",
     "@linaria/react": "^4.3.4",
-    "@linaria/vite": "^4.2.6",
+    "@linaria/vite": "^4.2.7",
     "@rollup/plugin-strip": "^3.0.2",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/react": "^18.0.27",
@@ -91,9 +91,9 @@
     "terser": "^5.16.3",
     "vite": "^4.1.1",
     "vite-plugin-html-config": "^1.0.11",
-    "vite-plugin-image-optimizer": "^1.0.7",
+    "vite-plugin-image-optimizer": "^1.0.8",
     "vite-plugin-minify": "^1.5.2",
-    "vite-plugin-pwa": "^0.14.2",
+    "vite-plugin-pwa": "^0.14.3",
     "workbox-window": "^6.5.4"
   },
   "pnpm": {
@@ -106,5 +106,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@7.26.3"
+  "packageManager": "pnpm@7.27.0"
 }
