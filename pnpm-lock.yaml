@@ -31,7 +31,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-sonarjs: ^0.18.0
   husky: ^8.0.3
-  lint-staged: ^13.1.1
+  lint-staged: ^13.1.2
   postcss-html: ^1.5.0
   postcss-nested: ^6.0.0
   postcss-preset-env: ^8.0.1
@@ -51,7 +51,7 @@ specifiers:
   stylelint-config-html: ^1.1.0
   stylelint-config-prettier: ^9.0.5
   stylelint-config-standard: ^29.0.0
-  stylelint-declaration-block-no-ignored-properties: ^2.6.0
+  stylelint-declaration-block-no-ignored-properties: ^2.7.0
   stylelint-formatter-pretty: ^3.1.1
   stylelint-order: ^6.0.2
   svgo: ^3.0.2
@@ -104,7 +104,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.34.0
   eslint-plugin-sonarjs: 0.18.0_eslint@8.34.0
   husky: 8.0.3
-  lint-staged: 13.1.1
+  lint-staged: 13.1.2
   postcss-html: 1.5.0
   postcss-nested: 6.0.0_postcss@8.4.21
   postcss-preset-env: 8.0.1_postcss@8.4.21
@@ -118,7 +118,7 @@ devDependencies:
   stylelint-config-html: 1.1.0_kbto3rg3njmczth2rrsgfnlsqa
   stylelint-config-prettier: 9.0.5_stylelint@14.16.1
   stylelint-config-standard: 29.0.0_stylelint@14.16.1
-  stylelint-declaration-block-no-ignored-properties: 2.6.0_stylelint@14.16.1
+  stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@14.16.1
   stylelint-formatter-pretty: 3.1.1
   stylelint-order: 6.0.2_stylelint@14.16.1
   svgo: 3.0.2
@@ -4843,8 +4843,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.1.1:
-    resolution: {integrity: sha512-LLJLO0Kdbcv2a+CvSF4p1M7jBZOajKSMpBUvyR8+bXccsqPER0/NxTFQSpNHjqwV9kM3tkHczYerTB5wI+bksQ==}
+  /lint-staged/13.1.2:
+    resolution: {integrity: sha512-K9b4FPbWkpnupvK3WXZLbgu9pchUJ6N7TtVZjbaPsoizkqFUDkUReUL25xdrCljJs7uLUF3tZ7nVPeo/6lp+6w==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -6692,11 +6692,11 @@ packages:
       stylelint-config-recommended: 9.0.0_stylelint@14.16.1
     dev: true
 
-  /stylelint-declaration-block-no-ignored-properties/2.6.0_stylelint@14.16.1:
-    resolution: {integrity: sha512-S9EC/tVJL19ppMRC4A4ecxtkENHZ7WNrEAukJVDtFt+iZgNP3SmokOLlYUhe6qZuB2XUvETqUx6r2p3Xfo7Rxw==}
+  /stylelint-declaration-block-no-ignored-properties/2.7.0_stylelint@14.16.1:
+    resolution: {integrity: sha512-44SpI9+9Oc1ICuwwRfwS/3npQ2jPobDSTnwWdNgZGryGqQCp17CgEIWjCv1BgUOSzND3RqywNCNLKvO1AOxbfg==}
     engines: {node: '>=6'}
     peerDependencies:
-      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
+      stylelint: ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
     dependencies:
       stylelint: 14.16.1
     dev: true
