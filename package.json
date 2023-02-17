@@ -40,7 +40,7 @@
     "sweetalert2": "^11.7.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.3",
+    "@commitlint/cli": "^17.4.4",
     "@html-eslint/eslint-plugin": "^0.16.0",
     "@html-eslint/parser": "^0.16.0",
     "@linaria/core": "^4.2.6",
