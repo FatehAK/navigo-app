@@ -33,7 +33,7 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.1.2
   postcss-html: ^1.5.0
-  postcss-nested: ^6.0.0
+  postcss-nested: ^6.0.1
   postcss-preset-env: ^8.0.1
   postcss-syntax: ^0.36.2
   prettier: ^2.8.4
@@ -106,7 +106,7 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 13.1.2
   postcss-html: 1.5.0
-  postcss-nested: 6.0.0_postcss@8.4.21
+  postcss-nested: 6.0.1_postcss@8.4.21
   postcss-preset-env: 8.0.1_postcss@8.4.21
   postcss-syntax: 0.36.2_bgflblcefvprpmv6bvxgmrwgce
   prettier: 2.8.4
@@ -5687,8 +5687,8 @@ packages:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
     dev: true
 
-  /postcss-nested/6.0.0_postcss@8.4.21:
-    resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
+  /postcss-nested/6.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
