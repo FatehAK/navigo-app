@@ -4,9 +4,9 @@ specifiers:
   '@commitlint/cli': ^17.4.4
   '@html-eslint/eslint-plugin': ^0.16.0
   '@html-eslint/parser': ^0.16.0
-  '@linaria/core': ^4.2.6
-  '@linaria/react': ^4.3.4
-  '@linaria/vite': ^4.2.7
+  '@linaria/core': ^4.2.7
+  '@linaria/react': ^4.3.5
+  '@linaria/vite': ^4.2.8
   '@rollup/plugin-strip': ^3.0.2
   '@stylelint/postcss-css-in-js': ^0.38.0
   '@types/react': ^18.0.28
@@ -57,7 +57,7 @@ specifiers:
   svgo: ^3.0.2
   sweetalert2: ^11.7.2
   terser: ^5.16.4
-  vite: ^4.1.2
+  vite: ^4.1.3
   vite-plugin-html-config: ^1.0.11
   vite-plugin-image-optimizer: ^1.0.8
   vite-plugin-minify: ^1.5.2
@@ -77,15 +77,15 @@ devDependencies:
   '@commitlint/cli': 17.4.4
   '@html-eslint/eslint-plugin': 0.16.0
   '@html-eslint/parser': 0.16.0
-  '@linaria/core': 4.2.6
-  '@linaria/react': 4.3.4_react@18.2.0
-  '@linaria/vite': 4.2.7_vite@4.1.2
+  '@linaria/core': 4.2.7
+  '@linaria/react': 4.3.5_react@18.2.0
+  '@linaria/vite': 4.2.8_vite@4.1.3
   '@rollup/plugin-strip': 3.0.2_rollup@2.79.1
   '@stylelint/postcss-css-in-js': 0.38.0_64375vj2stjdn6gyt55zwvoboa
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
-  '@vitejs/plugin-legacy': 3.0.2_terser@5.16.4+vite@4.1.2
-  '@vitejs/plugin-react': 3.1.0_vite@4.1.2
+  '@vitejs/plugin-legacy': 3.0.2_terser@5.16.4+vite@4.1.3
+  '@vitejs/plugin-react': 3.1.0_vite@4.1.3
   browserslist-to-esbuild: 1.2.0
   change-case: 4.1.2
   concurrently: 7.6.0
@@ -123,11 +123,11 @@ devDependencies:
   stylelint-order: 6.0.2_stylelint@14.16.1
   svgo: 3.0.2
   terser: 5.16.4
-  vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
-  vite-plugin-html-config: 1.0.11_vite@4.1.2
-  vite-plugin-image-optimizer: 1.0.8_vite@4.1.2
-  vite-plugin-minify: 1.5.2_vite@4.1.2
-  vite-plugin-pwa: 0.14.4_572dgkg6r3er7lxfenkpmx4d2u
+  vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
+  vite-plugin-html-config: 1.0.11_vite@4.1.3
+  vite-plugin-image-optimizer: 1.0.8_vite@4.1.3
+  vite-plugin-minify: 1.5.2_vite@4.1.3
+  vite-plugin-pwa: 0.14.4_a7neqmautsvqvxbixxqqjc4mq4
   workbox-window: 6.5.4
 
 packages:
@@ -2053,8 +2053,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@linaria/babel-preset/4.4.1:
-    resolution: {integrity: sha512-C5z7gE70i62rtTPyCQaCskfT9jkoue2vO1RG+vxtuf/pKIdfHz177wFTzyfNVvLw+WVdhOtCyO8rzq6+4Tmnig==}
+  /@linaria/babel-preset/4.4.2:
+    resolution: {integrity: sha512-gCnxVJ08KQCCn0Lw41BZmVYa9XeRATmAwtEHKC4YveprngdaYV5TOX6/iBASt9UwiteStEXZP9csGztW+mjMmg==}
     engines: {node: ^12.16.0 || >=13.7.0}
     dependencies:
       '@babel/core': 7.20.12
@@ -2063,11 +2063,11 @@ packages:
       '@babel/template': 7.20.7
       '@babel/traverse': 7.20.13
       '@babel/types': 7.20.7
-      '@linaria/core': 4.2.6
+      '@linaria/core': 4.2.7
       '@linaria/logger': 4.0.0
-      '@linaria/shaker': 4.2.8
-      '@linaria/tags': 4.3.1
-      '@linaria/utils': 4.3.1
+      '@linaria/shaker': 4.2.9
+      '@linaria/tags': 4.3.2
+      '@linaria/utils': 4.3.2
       cosmiconfig: 8.0.0
       find-up: 5.0.0
       source-map: 0.7.4
@@ -2076,13 +2076,13 @@ packages:
       - supports-color
     dev: true
 
-  /@linaria/core/4.2.6:
-    resolution: {integrity: sha512-AKB3xh20KJ3ZPnynJkLd1X1y/qSDYu2HVHPXa28ouDbGoUpPLrl3/nsdoqalzu/igqnDYCOLqT9qXbuT3vG8ww==}
+  /@linaria/core/4.2.7:
+    resolution: {integrity: sha512-e+p/mkHAnbYpPFncnzejvyz/Ae057po1f+GyToMojlJUpt1rUNhxnqJP4stFdIeUtAc2yiKq9I8IljCduQktsw==}
     engines: {node: ^12.16.0 || >=13.7.0}
     dependencies:
       '@linaria/logger': 4.0.0
-      '@linaria/tags': 4.3.1
-      '@linaria/utils': 4.3.1
+      '@linaria/tags': 4.3.2
+      '@linaria/utils': 4.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2097,16 +2097,16 @@ packages:
       - supports-color
     dev: true
 
-  /@linaria/react/4.3.4_react@18.2.0:
-    resolution: {integrity: sha512-GZbXfD5jJyyTGotlskgsMjcm+Guh0riVDuSv5puxATXe96gG/lnRppR+MNG3iZp0pbsAOBjXOoveui6ldc2ZVg==}
+  /@linaria/react/4.3.5_react@18.2.0:
+    resolution: {integrity: sha512-5VIRu9ids0HBXqvRFRe7XWfMHU6slLqyMA81GKYnWeS4JC+WW6mVm0Rw2sBBHRXZjijI1kinputRQk2kdxaKDg==}
     engines: {node: ^12.16.0 || >=13.7.0}
     peerDependencies:
       react: '>=16'
     dependencies:
       '@emotion/is-prop-valid': 1.2.0
-      '@linaria/core': 4.2.6
-      '@linaria/tags': 4.3.1
-      '@linaria/utils': 4.3.1
+      '@linaria/core': 4.2.7
+      '@linaria/tags': 4.3.2
+      '@linaria/utils': 4.3.2
       react: 18.2.0
       react-html-attributes: 1.4.6
       ts-invariant: 0.10.3
@@ -2114,8 +2114,8 @@ packages:
       - supports-color
     dev: true
 
-  /@linaria/shaker/4.2.8:
-    resolution: {integrity: sha512-+0ZZNNcNxLPiMFy/lEj9lkfyUMDnnP+A81PiqLXS2B8rJXfzgjuQDYVFRQ7Eh/ltw2+vLzUKEq+29jcFQq2AjQ==}
+  /@linaria/shaker/4.2.9:
+    resolution: {integrity: sha512-QGewHwSkde51aORKd9oLVHppeNp9kChwrwkLbXrY21ZM9XMXuljhcfKq/BZG2pNLCfzaTJQXlxvNV1HCcB6v1w==}
     engines: {node: ^12.16.0 || >=13.7.0}
     dependencies:
       '@babel/core': 7.20.12
@@ -2125,26 +2125,26 @@ packages:
       '@babel/plugin-transform-template-literals': 7.18.9_@babel+core@7.20.12
       '@babel/preset-env': 7.20.2_@babel+core@7.20.12
       '@linaria/logger': 4.0.0
-      '@linaria/utils': 4.3.1
+      '@linaria/utils': 4.3.2
       babel-plugin-transform-react-remove-prop-types: 0.4.24
       ts-invariant: 0.10.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@linaria/tags/4.3.1:
-    resolution: {integrity: sha512-H1CgDYnZg8+TBiezoRxo6uBYWDzAqV/P+siFlbPGWgykzfqyO8p5XL/awk41sAdR07+2JhpXUowNUOEo7LJTYg==}
+  /@linaria/tags/4.3.2:
+    resolution: {integrity: sha512-AJCs2JZYFWAfSpKik2orTi7awvZn2OKCH5PwFPbnt2PhRlA0Hwbk5cExi5fulflPyexhpw0r1sRxL+yMjmY1wA==}
     engines: {node: ^12.16.0 || >=13.7.0}
     dependencies:
       '@babel/generator': 7.20.14
       '@linaria/logger': 4.0.0
-      '@linaria/utils': 4.3.1
+      '@linaria/utils': 4.3.2
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@linaria/utils/4.3.1:
-    resolution: {integrity: sha512-+Rx07/gpqUL8v9rcUs4kt8JS6UkcJn829iofNAf3jVcizl1FyOOD0wRTJPq4Rh5l3AsbUqFCYgoCkHHMAMgK5Q==}
+  /@linaria/utils/4.3.2:
+    resolution: {integrity: sha512-EBw5jgO6Ql2V8SMrnAlrJXDu9+OlzO/PIgVFJQgTj/tT66Do0CRYD+lVmdLf/28Nf1Y4r/zReinKZUWt1vzLeA==}
     engines: {node: ^12.16.0 || >=13.7.0}
     dependencies:
       '@babel/core': 7.20.12
@@ -2159,17 +2159,17 @@ packages:
       - supports-color
     dev: true
 
-  /@linaria/vite/4.2.7_vite@4.1.2:
-    resolution: {integrity: sha512-a2IevZqRoDcVRM7W6axAipit/i+PfsgkGUGmMeSG5K6wnBLC5KgBzZ/F0DB7r4oMZVcvwEjvNKUzBRnSULZCag==}
+  /@linaria/vite/4.2.8_vite@4.1.3:
+    resolution: {integrity: sha512-GQ5zW5QbDJ8CaNLe0begh8Fpyh5roCz4eyAN+yqmDNxmeFL9KIS7VR4erBrW4fxunkbiuwlxzrRjGYyQSMV3Cg==}
     engines: {node: ^12.16.0 || >=13.7.0}
     peerDependencies:
       vite: '>=3.1.0 || >=4'
     dependencies:
-      '@linaria/babel-preset': 4.4.1
+      '@linaria/babel-preset': 4.4.2
       '@linaria/logger': 4.0.0
-      '@linaria/utils': 4.3.1
+      '@linaria/utils': 4.3.2
       '@rollup/pluginutils': 4.2.1
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2435,7 +2435,7 @@ packages:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
     dev: true
 
-  /@vitejs/plugin-legacy/3.0.2_terser@5.16.4+vite@4.1.2:
+  /@vitejs/plugin-legacy/3.0.2_terser@5.16.4+vite@4.1.3:
     resolution: {integrity: sha512-9BT2mXunC7kQGKHP70BIbNZ/85P/KUMGKBS9CiV+XKNDZGNBjUnyrh3ofgtqgObmxKaEP2xJsEIRNIFJ+hjI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2448,10 +2448,10 @@ packages:
       regenerator-runtime: 0.13.11
       systemjs: 6.13.0
       terser: 5.16.4
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     dev: true
 
-  /@vitejs/plugin-react/3.1.0_vite@4.1.2:
+  /@vitejs/plugin-react/3.1.0_vite@4.1.3:
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2462,7 +2462,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7151,16 +7151,16 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-html-config/1.0.11_vite@4.1.2:
+  /vite-plugin-html-config/1.0.11_vite@4.1.3:
     resolution: {integrity: sha512-hUybhgI+/LQQ5q6xoMMsTvI4PBuQD/Wv6Z1vtDPVWjanS8weCIexXuLLYNGD/93f0v8W2hpNfXpmxgpZMahJ0g==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       vite: '>=2.0.0 || >=4'
     dependencies:
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     dev: true
 
-  /vite-plugin-image-optimizer/1.0.8_vite@4.1.2:
+  /vite-plugin-image-optimizer/1.0.8_vite@4.1.3:
     resolution: {integrity: sha512-0+nEbBfYJw5VrFp37GzfCPjHLFlqmGk8EEVuR8Pnw5xg8JwfQk2XfM0Tk1kDlnT6oW0xTSvDrUwlj+gcwBHH1Q==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -7168,19 +7168,19 @@ packages:
     dependencies:
       ansi-colors: 4.1.3
       pathe: 1.1.0
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     dev: true
 
-  /vite-plugin-minify/1.5.2_vite@4.1.2:
+  /vite-plugin-minify/1.5.2_vite@4.1.3:
     resolution: {integrity: sha512-clf3THHlet1jD35y8+mbw/xgACbdUQ1Eyc9zZFiqaxVOZLSC3UbrkOYOG+Nf4cleRjWgb8czbXrnQiWZICVh3Q==}
     peerDependencies:
       vite: '*'
     dependencies:
       html-minifier-terser: 6.1.0
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
     dev: true
 
-  /vite-plugin-pwa/0.14.4_572dgkg6r3er7lxfenkpmx4d2u:
+  /vite-plugin-pwa/0.14.4_a7neqmautsvqvxbixxqqjc4mq4:
     resolution: {integrity: sha512-M7Ct0so8OlouMkTWgXnl8W1xU95glITSKIe7qswZf1tniAstO2idElGCnsrTJ5NPNSx1XqfTCOUj8j94S6FD7Q==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0 || >=4
@@ -7192,15 +7192,15 @@ packages:
       fast-glob: 3.2.12
       pretty-bytes: 6.0.0
       rollup: 3.12.0
-      vite: 4.1.2_2x4ktxestkcuetj6d4vcudpo3u
+      vite: 4.1.3_2x4ktxestkcuetj6d4vcudpo3u
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/4.1.2_2x4ktxestkcuetj6d4vcudpo3u:
-    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
+  /vite/4.1.3_2x4ktxestkcuetj6d4vcudpo3u:
+    resolution: {integrity: sha512-0Zqo4/Fr/swSOBmbl+HAAhOjrqNwju+yTtoe4hQX9UsARdcuc9njyOdr6xU0DDnV7YP0RT6mgTTOiRtZgxfCxA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
