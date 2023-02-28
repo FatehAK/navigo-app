@@ -37,7 +37,7 @@
     "react-router-dom": "^6.8.2",
     "react-transition-group": "^4.4.5",
     "sanitize.css": "^13.0.0",
-    "sweetalert2": "^11.7.2"
+    "sweetalert2": "^11.7.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
@@ -91,7 +91,7 @@
     "terser": "^5.16.5",
     "vite": "^4.1.4",
     "vite-plugin-html-config": "^1.0.11",
-    "vite-plugin-image-optimizer": "^1.0.8",
+    "vite-plugin-image-optimizer": "^1.0.10",
     "vite-plugin-minify": "^1.5.2",
     "vite-plugin-pwa": "^0.14.4",
     "workbox-window": "^6.5.4"

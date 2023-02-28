@@ -55,11 +55,11 @@ specifiers:
   stylelint-formatter-pretty: ^3.1.1
   stylelint-order: ^6.0.2
   svgo: ^3.0.2
-  sweetalert2: ^11.7.2
+  sweetalert2: ^11.7.3
   terser: ^5.16.5
   vite: ^4.1.4
   vite-plugin-html-config: ^1.0.11
-  vite-plugin-image-optimizer: ^1.0.8
+  vite-plugin-image-optimizer: ^1.0.10
   vite-plugin-minify: ^1.5.2
   vite-plugin-pwa: ^0.14.4
   workbox-window: ^6.5.4
@@ -71,7 +71,7 @@ dependencies:
   react-router-dom: 6.8.2_biqbaboplfbrettd7655fr4n2y
   react-transition-group: 4.4.5_biqbaboplfbrettd7655fr4n2y
   sanitize.css: 13.0.0
-  sweetalert2: 11.7.2
+  sweetalert2: 11.7.3
 
 devDependencies:
   '@commitlint/cli': 17.4.4
@@ -125,7 +125,7 @@ devDependencies:
   terser: 5.16.5
   vite: 4.1.4_y6lmzpwd2pbvih6a6ro62gcin4
   vite-plugin-html-config: 1.0.11_vite@4.1.4
-  vite-plugin-image-optimizer: 1.0.8_vite@4.1.4
+  vite-plugin-image-optimizer: 1.0.10_vite@4.1.4
   vite-plugin-minify: 1.5.2_vite@4.1.4
   vite-plugin-pwa: 0.14.4_qtdhuw7qkuvvectm2wxn5d44j4
   workbox-window: 6.5.4
@@ -6865,8 +6865,8 @@ packages:
       picocolors: 1.0.0
     dev: true
 
-  /sweetalert2/11.7.2:
-    resolution: {integrity: sha512-atPjDa3fv/4xwZpiAt7FZUgAhR5VAASiLP2hu7HUeVDXx+v4/9nD1W0u8xal1e9f2/qGh0DwTxPXPV9XoZIBvg==}
+  /sweetalert2/11.7.3:
+    resolution: {integrity: sha512-fUN/fyVSBZNtY4Rr/Qtxn7tNNnlRAbUhQxTQ9uOo0xVMIHBmqq4/9pau5N9dB2pvkB353XL/ywRAycscLoYU3w==}
     dev: false
 
   /systemjs/6.14.0:
@@ -7191,8 +7191,8 @@ packages:
       vite: 4.1.4_y6lmzpwd2pbvih6a6ro62gcin4
     dev: true
 
-  /vite-plugin-image-optimizer/1.0.8_vite@4.1.4:
-    resolution: {integrity: sha512-0+nEbBfYJw5VrFp37GzfCPjHLFlqmGk8EEVuR8Pnw5xg8JwfQk2XfM0Tk1kDlnT6oW0xTSvDrUwlj+gcwBHH1Q==}
+  /vite-plugin-image-optimizer/1.0.10_vite@4.1.4:
+    resolution: {integrity: sha512-Kgyx4EpVSEufhza779hhmgHcx0AZ+oiVTjDPfaXyLcDqNq/+mczsYFM/NA9Di+CmFh/W5ciiDsPawRK1IcFJ9A==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: '>=3 || >=4'
