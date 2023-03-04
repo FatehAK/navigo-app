@@ -42,7 +42,7 @@ specifiers:
   react-dom: ^18.2.0
   react-router-dom: ^6.8.2
   react-transition-group: ^4.4.5
-  rimraf: ^4.2.0
+  rimraf: ^4.3.0
   rollup-plugin-visualizer: ^5.9.0
   sanitize.css: ^13.0.0
   sharp: ^0.31.3
@@ -110,7 +110,7 @@ devDependencies:
   postcss-preset-env: 8.0.1_postcss@8.4.21
   postcss-syntax: 0.36.2_bgflblcefvprpmv6bvxgmrwgce
   prettier: 2.8.4
-  rimraf: 4.2.0
+  rimraf: 4.3.0
   rollup-plugin-visualizer: 5.9.0_rollup@2.79.1
   sharp: 0.31.3
   stylelint: 14.16.1
@@ -6299,8 +6299,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/4.2.0:
-    resolution: {integrity: sha512-tPt+gLORNVqRCk0NwuJ5SlMEcOGvt4CCU8sUPqgCFtCbnoNCTd9Q6vq7JlBbxQlACiH14OR28y7piA2Bak9Sxw==}
+  /rimraf/4.3.0:
+    resolution: {integrity: sha512-5qVDXPbByA1qSJEWMv1qAwKsoS22vVpsL2QyxCKBw4gf6XiFo1K3uRLY6uSOOBFDwnqAZtnbILqWKKlzh8bkGg==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
