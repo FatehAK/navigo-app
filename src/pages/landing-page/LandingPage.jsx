@@ -36,7 +36,6 @@ const LandingPage = () => {
     let listener;
     if (isMapLoaded) {
       const autoComplete = new window.google.maps.places.Autocomplete(inputRef.current, {
-        componentRestrictions: { country: 'IN' },
         fields: ['geometry'],
       });
       listener = autoComplete.addListener('place_changed', () => {
@@ -59,7 +58,7 @@ const LandingPage = () => {
       const address = inputRef.current.value;
       if (address.trim().length) {
         const geocoder = new window.google.maps.Geocoder();
-        geocoder.geocode({ address, componentRestrictions: { country: 'IN' } }, (results, status) => {
+        geocoder.geocode({ address }, (results, status) => {
           if (status === window.google.maps.GeocoderStatus.OK) {
             const { location } = results[0].geometry;
             navigateToSearch({ lat: location.lat(), lng: location.lng() });
