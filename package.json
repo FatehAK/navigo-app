@@ -93,7 +93,7 @@
     "vite-plugin-image-optimizer": "^1.1.1",
     "vite-plugin-minify": "^1.5.2",
     "vite-plugin-pwa": "^0.14.4",
-    "workbox-window": "^6.6.0"
+    "workbox-window": "^6.6.1"
   },
   "pnpm": {
     "peerDependencyRules": {
