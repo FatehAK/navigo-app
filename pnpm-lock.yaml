@@ -9,7 +9,7 @@ specifiers:
   '@linaria/vite': ^4.2.9
   '@rollup/plugin-strip': ^3.0.2
   '@stylelint/postcss-css-in-js': ^0.38.0
-  '@types/react': ^18.2.13
+  '@types/react': ^18.2.14
   '@types/react-dom': ^18.2.6
   '@vitejs/plugin-legacy': ^4.0.1
   '@vitejs/plugin-react': ^3.1.0
@@ -81,7 +81,7 @@ devDependencies:
   '@linaria/vite': 4.2.11_vite@4.3.9
   '@rollup/plugin-strip': 3.0.2_rollup@2.79.1
   '@stylelint/postcss-css-in-js': 0.38.0_bexjxuuj3m3skabeb3g7xx5day
-  '@types/react': 18.2.13
+  '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   '@vitejs/plugin-legacy': 4.0.4_terser@5.18.0+vite@4.3.9
   '@vitejs/plugin-react': 3.1.0_vite@4.3.9
@@ -2587,11 +2587,11 @@ packages:
   /@types/react-dom/18.2.6:
     resolution: {integrity: sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A==}
     dependencies:
-      '@types/react': 18.2.13
+      '@types/react': 18.2.14
     dev: true
 
-  /@types/react/18.2.13:
-    resolution: {integrity: sha512-vJ+zElvi/Zn9cVXB5slX2xL8PZodPCwPRDpittQdw43JR2AJ5k3vKdgJJyneV/cYgIbLQUwXa9JVDvUZXGba+Q==}
+  /@types/react/18.2.14:
+    resolution: {integrity: sha512-A0zjq+QN/O0Kpe30hA1GidzyFjatVvrpIvWLxD+xv67Vt91TWWgco9IvrJBkeyHm1trGaFS/FSGqPlhyeZRm0g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
