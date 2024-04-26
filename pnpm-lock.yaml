@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-only-warn: ^1.1.0
   eslint-plugin-promise: ^6.1.1
   eslint-plugin-react: ^7.32.2
-  eslint-plugin-react-hooks: ^4.6.1
+  eslint-plugin-react-hooks: ^4.6.2
   eslint-plugin-sonarjs: ^0.18.0
   husky: ^8.0.3
   lint-staged: ^13.1.2
@@ -38,8 +38,8 @@ specifiers:
   postcss-syntax: ^0.36.2
   prettier: ^2.8.4
   prop-types: ^15.8.1
-  react: ^18.3.0
-  react-dom: ^18.3.0
+  react: ^18.3.1
+  react-dom: ^18.3.1
   react-router-dom: ^6.23.0
   react-transition-group: ^4.4.5
   rimraf: ^4.4.0
@@ -65,10 +65,10 @@ specifiers:
 
 dependencies:
   prop-types: 15.8.1
-  react: 18.3.0
-  react-dom: 18.3.0_react@18.3.0
-  react-router-dom: 6.23.0_rydrfxeul5zqz7xqpjjwnjuu7i
-  react-transition-group: 4.4.5_rydrfxeul5zqz7xqpjjwnjuu7i
+  react: 18.3.1
+  react-dom: 18.3.1_react@18.3.1
+  react-router-dom: 6.23.0_nnrd3gsncyragczmpvfhocinkq
+  react-transition-group: 4.4.5_nnrd3gsncyragczmpvfhocinkq
   sanitize.css: 13.0.0
   sweetalert2: 11.10.8
 
@@ -77,7 +77,7 @@ devDependencies:
   '@html-eslint/eslint-plugin': 0.17.2
   '@html-eslint/parser': 0.17.1
   '@linaria/core': 4.5.4
-  '@linaria/react': 4.5.4_react@18.3.0
+  '@linaria/react': 4.5.4_react@18.3.1
   '@linaria/vite': 4.5.4_pjudtf3r5rvu2gunzqip6eougy
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.1
   '@stylelint/postcss-css-in-js': 0.38.0_hffmvmxuwmisa7thxtzxrojqgu
@@ -90,7 +90,7 @@ devDependencies:
   concurrently: 7.6.0
   czg: 1.5.3
   eslint: 8.57.0
-  eslint-config-airbnb: 19.0.4_vsdgq3yddi4std6w3afewdjrua
+  eslint-config-airbnb: 19.0.4_muczmshpgrxay7rsiy57oozjri
   eslint-config-prettier: 8.10.0_eslint@8.57.0
   eslint-formatter-pretty: 4.1.0
   eslint-import-resolver-alias: 1.1.2_gblj7z6526q5ff7xdcrfk7bm7e
@@ -100,7 +100,7 @@ devDependencies:
   eslint-plugin-only-warn: 1.1.0
   eslint-plugin-promise: 6.1.1_eslint@8.57.0
   eslint-plugin-react: 7.34.1_eslint@8.57.0
-  eslint-plugin-react-hooks: 4.6.1_eslint@8.57.0
+  eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
   eslint-plugin-sonarjs: 0.18.0_eslint@8.57.0
   husky: 8.0.3
   lint-staged: 13.3.0
@@ -2268,7 +2268,7 @@ packages:
       - supports-color
     dev: true
 
-  /@linaria/react/4.5.4_react@18.3.0:
+  /@linaria/react/4.5.4_react@18.3.1:
     resolution: {integrity: sha512-/dhCVCsfdGPfQCPV0q5yy+DDlFXepvfXrw/os2fC+Xo1v9J/9gyiaBBWHzcumauvNNFj8aN6vRkj89fMujPHew==}
     engines: {node: ^12.16.0 || >=13.7.0}
     peerDependencies:
@@ -2279,7 +2279,7 @@ packages:
       '@linaria/tags': 4.5.4
       '@linaria/utils': 4.5.3
       minimatch: 9.0.4
-      react: 18.3.0
+      react: 18.3.1
       react-html-attributes: 1.4.6
       ts-invariant: 0.10.3
     transitivePeerDependencies:
@@ -3936,7 +3936,7 @@ packages:
       semver: 6.3.1
     dev: true
 
-  /eslint-config-airbnb/19.0.4_vsdgq3yddi4std6w3afewdjrua:
+  /eslint-config-airbnb/19.0.4_muczmshpgrxay7rsiy57oozjri:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -3951,7 +3951,7 @@ packages:
       eslint-plugin-import: 2.29.1_eslint@8.57.0
       eslint-plugin-jsx-a11y: 6.8.0_eslint@8.57.0
       eslint-plugin-react: 7.34.1_eslint@8.57.0
-      eslint-plugin-react-hooks: 4.6.1_eslint@8.57.0
+      eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
       object.assign: 4.1.5
       object.entries: 1.1.8
     dev: true
@@ -4105,8 +4105,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-react-hooks/4.6.1_eslint@8.57.0:
-    resolution: {integrity: sha512-Ck77j8hF7l9N4S/rzSLOWEKpn994YH6iwUK8fr9mXIaQvGpQYmOnQLbiue1u5kI5T1y+gdgqosnEAO9NCz0DBg==}
+  /eslint-plugin-react-hooks/4.6.2_eslint@8.57.0:
+    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
@@ -6434,14 +6434,14 @@ packages:
       strip-json-comments: 2.0.1
     dev: true
 
-  /react-dom/18.3.0_react@18.3.0:
-    resolution: {integrity: sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==}
+  /react-dom/18.3.1_react@18.3.1:
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.3.0
+      react: ^18.3.1
     dependencies:
       loose-envify: 1.4.0
-      react: 18.3.0
-      scheduler: 0.23.1
+      react: 18.3.1
+      scheduler: 0.23.2
     dev: false
 
   /react-html-attributes/1.4.6:
@@ -6458,7 +6458,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.23.0_rydrfxeul5zqz7xqpjjwnjuu7i:
+  /react-router-dom/6.23.0_nnrd3gsncyragczmpvfhocinkq:
     resolution: {integrity: sha512-Q9YaSYvubwgbal2c9DJKfx6hTNoBp3iJDsl+Duva/DwxoJH+OTXkxGpql4iUK2sla/8z4RpjAm6EWx1qUDuopQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -6466,22 +6466,22 @@ packages:
       react-dom: '>=16.8'
     dependencies:
       '@remix-run/router': 1.16.0
-      react: 18.3.0
-      react-dom: 18.3.0_react@18.3.0
-      react-router: 6.23.0_react@18.3.0
+      react: 18.3.1
+      react-dom: 18.3.1_react@18.3.1
+      react-router: 6.23.0_react@18.3.1
     dev: false
 
-  /react-router/6.23.0_react@18.3.0:
+  /react-router/6.23.0_react@18.3.1:
     resolution: {integrity: sha512-wPMZ8S2TuPadH0sF5irFGjkNLIcRvOSaEe7v+JER8508dyJumm6XZB1u5kztlX0RVq6AzRVndzqcUh6sFIauzA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
       '@remix-run/router': 1.16.0
-      react: 18.3.0
+      react: 18.3.1
     dev: false
 
-  /react-transition-group/4.4.5_rydrfxeul5zqz7xqpjjwnjuu7i:
+  /react-transition-group/4.4.5_nnrd3gsncyragczmpvfhocinkq:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
       react: '>=16.6.0'
@@ -6491,12 +6491,12 @@ packages:
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0_react@18.3.0
+      react: 18.3.1
+      react-dom: 18.3.1_react@18.3.1
     dev: false
 
-  /react/18.3.0:
-    resolution: {integrity: sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==}
+  /react/18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
@@ -6797,8 +6797,8 @@ packages:
     resolution: {integrity: sha512-ZRwKbh/eQ6w9vmTjkuG0Ioi3HBwPFce0O+v//ve+aOq1oeCy7jMV2qzzAlpsNuqpqCBjjriM1lbtZbF/Q8jVyA==}
     dev: false
 
-  /scheduler/0.23.1:
-    resolution: {integrity: sha512-5GKS5JGfiah1O38Vfa9srZE4s3wdHbwjlCrvIookrg2FO9aIwKLOJXuJQFlEfNcVSOXuaL2hzDeY20uVXcUtrw==}
+  /scheduler/0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
     dependencies:
       loose-envify: 1.4.0
     dev: false
