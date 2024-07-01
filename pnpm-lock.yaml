@@ -98,7 +98,7 @@ devDependencies:
   eslint-plugin-import: 2.29.1_eslint@8.57.0
   eslint-plugin-jsx-a11y: 6.9.0_eslint@8.57.0
   eslint-plugin-only-warn: 1.1.0
-  eslint-plugin-promise: 6.2.0_eslint@8.57.0
+  eslint-plugin-promise: 6.4.0_eslint@8.57.0
   eslint-plugin-react: 7.34.3_eslint@8.57.0
   eslint-plugin-react-hooks: 4.6.2_eslint@8.57.0
   eslint-plugin-sonarjs: 0.18.0_eslint@8.57.0
@@ -4209,8 +4209,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /eslint-plugin-promise/6.2.0_eslint@8.57.0:
-    resolution: {integrity: sha512-QmAqwizauvnKOlifxyDj2ObfULpHQawlg/zQdgEixur9vl0CvZGv/LCJV2rtj3210QCoeGBzVMfMXqGAOr/4fA==}
+  /eslint-plugin-promise/6.4.0_eslint@8.57.0:
+    resolution: {integrity: sha512-/KWWRaD3fGkVCZsdR0RU53PSthFmoHVhZl+y9+6DqeDLSikLdlUVpVEAmI6iCRR5QyOjBYBqHZV/bdv4DJ4Gtw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
