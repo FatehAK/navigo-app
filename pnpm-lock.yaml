@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.8.1
-  '@html-eslint/eslint-plugin': ^0.17.1
-  '@html-eslint/parser': ^0.17.1
+  '@html-eslint/eslint-plugin': ^0.33.0
+  '@html-eslint/parser': ^0.33.0
   '@linaria/core': ^4.2.8
   '@linaria/react': ^4.3.6
   '@linaria/vite': ^4.2.9
@@ -74,8 +74,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.8.1
-  '@html-eslint/eslint-plugin': 0.17.2
-  '@html-eslint/parser': 0.17.1
+  '@html-eslint/eslint-plugin': 0.33.0
+  '@html-eslint/parser': 0.33.0
   '@linaria/core': 4.5.4
   '@linaria/react': 4.5.4_react@18.3.1
   '@linaria/vite': 4.5.4_snz3ro4fosyxbc35cczr4w7q3m
@@ -2020,16 +2020,25 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.17.2:
-    resolution: {integrity: sha512-tK5cPTqQ42+spT/hEfTLP06jw8dE/taJTmIEQNXU01YwH5NBnvpu6xVaaH1kQ7Xs2se69PWzsGlVuV5rfh462w==}
-    engines: {node: '>=8.10.0'}
+  /@html-eslint/eslint-plugin/0.33.0:
+    resolution: {integrity: sha512-iLpuJKPkjUYFA1BfIEr3lgQ/JdYA8ilrCDbqbLFW5ToH/9oqAeTJqhrg8xOPK/gQDWTOXAU6Ir7EWTrlJt3BXA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      '@html-eslint/template-parser': 0.33.0
     dev: true
 
-  /@html-eslint/parser/0.17.1:
-    resolution: {integrity: sha512-1DgkkEs7CsdXcRP2FstknsrXzdv+Sh5dIURbpJl+ET2fiB94XdWp37+lTqB6JvhKlIbOMGQTAcUL6/Jx5Ub81g==}
+  /@html-eslint/parser/0.33.0:
+    resolution: {integrity: sha512-vYH6MtSIt79ufObABZuvRtemuSJGXtRWBVHCIfGnskJ+cAypq7HXQo/Lv03dI6PwcOfrPrCwBLW662411HHoNg==}
     engines: {node: '>=8.10.0'}
     dependencies:
-      es-html-parser: 0.0.8
+      es-html-parser: 1.0.0-alpha.4
+    dev: true
+
+  /@html-eslint/template-parser/0.33.0:
+    resolution: {integrity: sha512-pJQSo6yPT4JmKTLhXM6WOMKW8mlFw0Ogu0o4JoDuaTdMAZWPIX+XJt4Ez8DqU8y6z/QMORgObJazK9CbmINXDg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      es-html-parser: 1.0.0-alpha.4
     dev: true
 
   /@humanwhocodes/config-array/0.13.0:
@@ -3722,8 +3731,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /es-html-parser/0.0.8:
-    resolution: {integrity: sha512-kjMH23xhvTBw/7Ve1Dtb/7yZdFajfvwOpdsgRHmnyt8yvTsDJnkFjUgEEaMZFW+e1OhN/eoZrvF9wehq+waTGg==}
+  /es-html-parser/1.0.0-alpha.4:
+    resolution: {integrity: sha512-5KUgd64goEPG1ZwP3rf/D+uAbdjyuNon0YY9u1yzR2NkFwa1UwxpsCQkzalAOlQaXAVtP32LGYRW4IAKAwo/sg==}
     dev: true
 
   /es-iterator-helpers/1.2.1:
