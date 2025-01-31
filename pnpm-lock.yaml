@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^17.8.1
-  '@html-eslint/eslint-plugin': ^0.33.1
-  '@html-eslint/parser': ^0.33.0
+  '@html-eslint/eslint-plugin': ^0.34.0
+  '@html-eslint/parser': ^0.34.0
   '@linaria/core': ^4.2.8
   '@linaria/react': ^4.3.6
   '@linaria/vite': ^4.2.9
@@ -74,8 +74,8 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 17.8.1
-  '@html-eslint/eslint-plugin': 0.33.1
-  '@html-eslint/parser': 0.33.0
+  '@html-eslint/eslint-plugin': 0.34.0
+  '@html-eslint/parser': 0.34.0
   '@linaria/core': 4.5.4
   '@linaria/react': 4.5.4_react@18.3.1
   '@linaria/vite': 4.5.4_snz3ro4fosyxbc35cczr4w7q3m
@@ -2020,25 +2020,32 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@html-eslint/eslint-plugin/0.33.1:
-    resolution: {integrity: sha512-ukBQCbNWW7cKF72T0rNWTbGPM1v191HAp3QgxYu5NQvZ5tvWgtzjbGXDAJvIFbY7hnX2dBO+EGl6aHJ/cqMusA==}
+  /@html-eslint/eslint-plugin/0.34.0:
+    resolution: {integrity: sha512-ksMbMQXOsfVHfnopKp9oEaKNiOP0kmFv1DOY54mWxynJ5SkQODYFawKj38CvkJo+89cw5J6+x8tn6ZT6Y2lbPA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
-      '@html-eslint/template-parser': 0.33.0
+      '@html-eslint/template-parser': 0.34.0
+      '@html-eslint/template-syntax-parser': 0.34.0
     dev: true
 
-  /@html-eslint/parser/0.33.0:
-    resolution: {integrity: sha512-vYH6MtSIt79ufObABZuvRtemuSJGXtRWBVHCIfGnskJ+cAypq7HXQo/Lv03dI6PwcOfrPrCwBLW662411HHoNg==}
+  /@html-eslint/parser/0.34.0:
+    resolution: {integrity: sha512-gWwcb0nPEq/wKQY+hvGQwdEJ9DXMKs1GLCqG51FqLTTOY1mtwTYRkjmviJCKFwAnQUkYhRrzolYj1ZF2XsTG6A==}
     engines: {node: '>=8.10.0'}
     dependencies:
+      '@html-eslint/template-syntax-parser': 0.34.0
       es-html-parser: 1.0.0-alpha.4
     dev: true
 
-  /@html-eslint/template-parser/0.33.0:
-    resolution: {integrity: sha512-pJQSo6yPT4JmKTLhXM6WOMKW8mlFw0Ogu0o4JoDuaTdMAZWPIX+XJt4Ez8DqU8y6z/QMORgObJazK9CbmINXDg==}
+  /@html-eslint/template-parser/0.34.0:
+    resolution: {integrity: sha512-hSOEYL5l9vuskklaZj6v5OVYmw6siZYM1g745uexo/YKoHzKSNHkzb/jK5XM6tn6fjYODvCqG04xR8OCn1Dsqw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       es-html-parser: 1.0.0-alpha.4
+    dev: true
+
+  /@html-eslint/template-syntax-parser/0.34.0:
+    resolution: {integrity: sha512-rmIrw3WtYXITA7AI+LgJqUmjLfWMEP2HNyvvdV8YJysdEOFtM0VXOT9hY8b7mV0ZGqPt/g0dWii1j/94omMufQ==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
   /@humanwhocodes/config-array/0.13.0:
