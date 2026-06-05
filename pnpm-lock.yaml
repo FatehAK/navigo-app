@@ -9,8 +9,8 @@ specifiers:
   '@linaria/vite': ^4.2.9
   '@rollup/plugin-strip': ^3.0.2
   '@stylelint/postcss-css-in-js': ^0.38.0
-  '@types/react': ^18.3.18
-  '@types/react-dom': ^18.3.5
+  '@types/react': ^18.3.31
+  '@types/react-dom': ^18.3.7
   '@vitejs/plugin-legacy': ^4.0.1
   '@vitejs/plugin-react': ^3.1.0
   browserslist-to-esbuild: ^1.2.0
@@ -81,8 +81,8 @@ devDependencies:
   '@linaria/vite': 4.5.4_snz3ro4fosyxbc35cczr4w7q3m
   '@rollup/plugin-strip': 3.0.4_rollup@2.79.2
   '@stylelint/postcss-css-in-js': 0.38.0_tl6gueuxaz732uj6krdqvw7otm
-  '@types/react': 18.3.18
-  '@types/react-dom': 18.3.5_@types+react@18.3.18
+  '@types/react': 18.3.31
+  '@types/react-dom': 18.3.7_@types+react@18.3.31
   '@vitejs/plugin-legacy': 4.1.1_terser@5.37.0+vite@4.5.9
   '@vitejs/plugin-react': 3.1.0_vite@4.5.9
   browserslist-to-esbuild: 1.2.0
@@ -2476,19 +2476,19 @@ packages:
     resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
     dev: true
 
-  /@types/react-dom/18.3.5_@types+react@18.3.18:
-    resolution: {integrity: sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==}
+  /@types/react-dom/18.3.7_@types+react@18.3.31:
+    resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
     peerDependencies:
       '@types/react': ^18.0.0
     dependencies:
-      '@types/react': 18.3.18
+      '@types/react': 18.3.31
     dev: true
 
-  /@types/react/18.3.18:
-    resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
+  /@types/react/18.3.31:
+    resolution: {integrity: sha512-vfEqpXTvwT91yhmwdfouStN2hSKwTvyRs8qpLfADyrq/kxDw0hZM7Wk9Ug1FELj8hIby+S/+kQCSRFF32nv2Qw==}
     dependencies:
       '@types/prop-types': 15.7.14
-      csstype: 3.1.3
+      csstype: 3.2.3
     dev: true
 
   /@types/resolve/1.17.1:
@@ -3387,8 +3387,8 @@ packages:
       css-tree: 2.2.1
     dev: true
 
-  /csstype/3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+  /csstype/3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   /czg/1.5.3:
     resolution: {integrity: sha512-prQB6tiJdRhw59Ec5t8lZPmhwL2ZmUIwmjF7+V9mB/2mMu1Tj9IcdNn/6/+nb6v/CSIT6kAIGpLb+hC2l5UuqA==}
@@ -3575,7 +3575,7 @@ packages:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
       '@babel/runtime': 7.26.7
-      csstype: 3.1.3
+      csstype: 3.2.3
     dev: false
 
   /dom-serializer/2.0.0:
@@ -7023,6 +7023,7 @@ packages:
   /source-map/0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
     dependencies:
       whatwg-url: 7.1.0
     dev: true
